@@ -1,0 +1,16 @@
+li{
+    list-style: none;
+    margin: 5px;
+    
+}
+.home{
+    margin-right: 1087px;
+
+}
+.img{
+    height: 50px;
+    width: 50px
+}
+.navbar{
+    background-color:rgb(56, 51, 52)
+}

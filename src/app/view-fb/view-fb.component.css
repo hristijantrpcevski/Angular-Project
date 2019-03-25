@@ -1,0 +1,30 @@
+
+ul {
+  list-style: none;
+}
+
+.photo {
+  margin-left: 40px;
+}
+
+.card-title {
+  overflow: hidden;
+  height: 1.2em;
+  white-space: nowrap;
+}
+
+.card{
+  background-color: #f0f0f0;
+}
+
+.card .card-title{
+ color:black;
+}
+
+.img-fluid{
+  width: 100%;
+}
+
+.card-panel {
+  margin-bottom: 20px;
+}

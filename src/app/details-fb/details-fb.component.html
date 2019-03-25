@@ -1,0 +1,19 @@
+<form [formGroup]="updateForm" class="container">
+  <div *ngIf="photo">
+    <div>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Title" formControlName="title" required>
+        <mat-error *ngIf="!updateForm.controls.title.valid">Please enter a valid title!</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <img class="img" src="{{photo.thumbnailUrl}}">
+    </div>
+    <div class="buttons">
+      <button class="btn" mat-raised-button color="primary" type="button" (click)="update()" [disabled]="!updateForm.valid">Update</button>
+      <span class="home" routerLinkActive="active">
+        <button class="btn-delete" mat-raised-button color="warn" type="button" (click)="delete(photo)">Delete</button>
+      </span>
+    </div>
+  </div>
+</form>

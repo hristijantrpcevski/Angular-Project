@@ -1,0 +1,23 @@
+<div class="container">
+  <div [formGroup]="formGroup">
+    <div>
+      <mat-form-field>
+        <li> 
+          <label for="title">Title</label>
+        </li>
+        <input type="text" name="title" formControlName="title" matInput>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <li>
+          <label for="thumbnaiUrl">Image</label>
+        </li>
+        <input type="text" formControlName="photoUrl" matInput>
+      </mat-form-field>
+    </div>
+    <button class="btn" mat-raised-button color="primary" (click)="save()">Save</button>
+    <mat-divider></mat-divider>
+    <img src="{{photo?.thumbnailUrl}}">
+  </div>
+</div>
